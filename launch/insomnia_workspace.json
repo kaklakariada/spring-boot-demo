@@ -1,0 +1,125 @@
+{
+	"_type": "export",
+	"__export_format": 3,
+	"__export_date": "2018-05-27T11:12:45.211Z",
+	"__export_source": "insomnia.desktop.app:v5.16.6",
+	"resources": [
+		{
+			"_id": "wrk_3c2391fbff3c4e5088bcaa8a5d4ddda2",
+			"created": 1527417998313,
+			"description": "",
+			"modified": 1527419497901,
+			"name": "spring-boot-demo",
+			"parentId": null,
+			"_type": "workspace"
+		},
+		{
+			"_id": "env_a89d33c635d344ab8bda06bb02458e67",
+			"color": null,
+			"created": 1527417998692,
+			"data": {},
+			"isPrivate": false,
+			"modified": 1527417998692,
+			"name": "New Environment",
+			"parentId": "wrk_3c2391fbff3c4e5088bcaa8a5d4ddda2",
+			"_type": "environment"
+		},
+		{
+			"_id": "jar_43a0e2973e9b4408aa66b39eec0bf3c1",
+			"cookies": [],
+			"created": 1527417998965,
+			"modified": 1527417998965,
+			"name": "Default Jar",
+			"parentId": "wrk_3c2391fbff3c4e5088bcaa8a5d4ddda2",
+			"_type": "cookie_jar"
+		},
+		{
+			"_id": "req_a016f60150544fbfb28d3a090fbde21e",
+			"authentication": {},
+			"body": {},
+			"created": 1527418172488,
+			"description": "",
+			"headers": [],
+			"isPrivate": false,
+			"metaSortKey": -1527418172488,
+			"method": "GET",
+			"modified": 1527418358219,
+			"name": "/api",
+			"parameters": [],
+			"parentId": "wrk_3c2391fbff3c4e5088bcaa8a5d4ddda2",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "{{ base_url  }}/api",
+			"_type": "request"
+		},
+		{
+			"_id": "req_5f5631d223324e1a86e29276680a99b6",
+			"authentication": {},
+			"body": {},
+			"created": 1527418389364,
+			"description": "",
+			"headers": [],
+			"isPrivate": false,
+			"metaSortKey": -1527418389364,
+			"method": "GET",
+			"modified": 1527418402396,
+			"name": "/api/projects",
+			"parameters": [],
+			"parentId": "wrk_3c2391fbff3c4e5088bcaa8a5d4ddda2",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "{{ base_url  }}/api/projects",
+			"_type": "request"
+		},
+		{
+			"_id": "req_f40ea850f3524781b0a1cc0b5d93b88a",
+			"authentication": {},
+			"body": {
+				"mimeType": "application/json",
+				"text": "{\n\t\"name\": \"my new project\"\n}"
+			},
+			"created": 1527418412601,
+			"description": "",
+			"headers": [
+				{
+					"id": "pair_b8cc86ff301c494c9744654daf7a2773",
+					"name": "Content-Type",
+					"value": "application/json"
+				}
+			],
+			"isPrivate": false,
+			"metaSortKey": -1527418280926,
+			"method": "POST",
+			"modified": 1527419425012,
+			"name": "/api/projects",
+			"parameters": [],
+			"parentId": "wrk_3c2391fbff3c4e5088bcaa8a5d4ddda2",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "{{ base_url  }}/api/projects",
+			"_type": "request"
+		},
+		{
+			"_id": "env_6c8dc2613f16482699821231bdb187b1",
+			"color": null,
+			"created": 1527418087439,
+			"data": {
+				"base_url": "http://localhost:8080"
+			},
+			"isPrivate": true,
+			"modified": 1527418271700,
+			"name": "local-dev",
+			"parentId": "env_a89d33c635d344ab8bda06bb02458e67",
+			"_type": "environment"
+		}
+	]
+}
