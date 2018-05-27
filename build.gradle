@@ -27,6 +27,15 @@ sourceCompatibility = 1.8
 targetCompatibility = 1.8
 
 dependencies {
-    compile("org.springframework.boot:spring-boot-starter-web")
-    testCompile("junit:junit")
+    compile "org.springframework.boot:spring-boot-starter-web"
+    compile "org.springframework.boot:spring-boot-starter-data-jpa"
+    compile "org.springframework.boot:spring-boot-starter-data-rest"
+    //compile "org.springframework:spring-jdbc"
+    
+    runtime "com.h2database:h2"
+    runtime "org.flywaydb:flyway-core"
+    
+    compileOnly "org.springframework.boot:spring-boot-devtools"
+    
+    testCompile "junit:junit"
 }
